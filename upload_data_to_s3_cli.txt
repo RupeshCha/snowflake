@@ -1,0 +1,13 @@
+-- Aws commands
+
+-- Copy data from local to aws s3.
+
+aws s3 cp /GITHUB/Snowflake/Snowflake/getting-started/ s3://snowflake-data-rup/upload_cli --recursive
+
+-- Copy data from aws s3 to local.
+
+aws s3 cp  s3://snowflake-data-rup/upload_cli  /GITHUB/Snowflake/Snowflake/getting-started_1/ --recursive
+
+-- Command to list all files in aws s3.
+
+aws s3 ls s3://snowflake-data-rup/ --recursive
