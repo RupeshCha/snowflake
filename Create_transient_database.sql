@@ -1,5 +1,6 @@
 CREATE OR REPLACE TRANSIENT DATABASE STAGING_AREA
 
+
  create or replace table emp (
          first_name string ,
          last_name string ,
