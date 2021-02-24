@@ -9,6 +9,8 @@
          start_date date
 );
 
+
+--com
 -- Copy data using filter condition on file name.
 
 copy into emp
