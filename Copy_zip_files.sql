@@ -5,6 +5,8 @@ create or replace stage my_s3_zip_stage
   url = 's3://snowflake069/zip_folder/'
   file_format = my_csv_format;
 
+
+
 copy into emp_ext_stage
 from (select t.$1 , t.$2 , t.$3 , t.$4 , t.$5 , t.$6 from @my_s3_zip_stage/ t)
 --pattern = '.*employees0[1-5].csv'
